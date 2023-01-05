@@ -1,0 +1,14 @@
+--Create a grocery store database
+
+CREATE TABLE clothes (Id INTEGER PRIMARY KEY, TYPE TEXT,Smallest_Size INTEGER, Biggest_Sizes INTEGER, PRICE_USD INTEGER,QUANTITY TEXT,LOCATION TEXT);
+
+INSERT INTO clothes VALUES (1, "Blouses", 2, 20,30, 100,"HOUSTON");
+INSERT INTO clothes VALUES (2,"Jeans",00,24, 45,150,"HOUSTON");
+INSERT INTO clothes VALUES (3,"Shoes",2,12, 75, 50,"HOUSTON");
+INSERT INTO clothes VALUES (4,"Jackets",2,28, 50 ,25,"HOUSTON");
+INSERT INTO clothes VALUES (5,"Dresses",0,22, 65 ,100,"HOUSTON");
+
+
+
+--display the database ordered by price.
+SELECT * FROM clothes ORDER BY PRICE_USD 
